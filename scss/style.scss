@@ -1,0 +1,114 @@
+@use "./variables" as variables;
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  padding: 2.5rem;
+  img {
+    width: 8rem;
+  }
+}
+
+.hero {
+  background-image: url("../docs/images/hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 18rem;
+}
+
+main {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 0 2.5rem;
+  h1 {
+    color: variables.$title-color;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    letter-spacing: 0.5rem;
+    span {
+      color: variables.$main-color;
+      font-weight: 300;
+    }
+  }
+  p {
+    color: variables.$main-color;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  form {
+    width: 100%;
+    height: 3.5rem;
+    position: relative;
+    #email {
+      width: 100%;
+      padding: 0 2rem;
+      height: 100%;
+      border-radius: 2rem;
+      border: 1px solid variables.$main-color;
+      outline: none;
+      &::placeholder {
+        font-family: "Josefin Sans", sans-serif;
+        color: variables.$main-color;
+        font-size: 1rem;
+        opacity: 0.6;
+      }
+    }
+    button {
+      position: absolute;
+      right: 0;
+      height: 100%;
+      width: 5rem;
+      border-radius: 2rem;
+      border: none;
+      background: variables.$btn-color;
+      cursor: pointer;
+      transition:
+        background 0.2s ease-in-out,
+        opacity 0.2s ease-in-out,
+        box-shadow 0.2s ease-in-out;
+      &:hover {
+        background: variables.$btn-color;
+        opacity: 0.7;
+        box-shadow: 0 0.8rem 0.7rem 0 variables.$main-color;
+      }
+    }
+    .error {
+      display: none;
+      p {
+        color: variables.$error-color;
+        margin-top: 0.2rem;
+        text-align: left;
+        margin-left: 2rem;
+        font-size: 0.8rem;
+      }
+      img {
+        position: absolute;
+        top: 50%;
+        right: 5.5rem;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+}
