@@ -1,0 +1,26 @@
+{
+  "name": "base-apparel-coming-soon-master",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Thomas-Bezille/FrontEnd-Mentor_Base_Apparel_coming_soon_page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Thomas-Bezille/FrontEnd-Mentor_Base_Apparel_coming_soon_page/issues"
+  },
+  "homepage": "https://github.com/Thomas-Bezille/FrontEnd-Mentor_Base_Apparel_coming_soon_page#readme",
+  "dependencies": {
+    "sass": "^1.100.0"
+  }
+}
